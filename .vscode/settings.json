@@ -1,0 +1,12 @@
+{
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true, // 저장시 format
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "workbench.settings.useSplitJSON": true // 요거 넣어줘야 설정이 merge된대요.
+}

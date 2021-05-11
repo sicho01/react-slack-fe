@@ -1,0 +1,49 @@
+{
+  "name": "react-slack-fe",
+  "version": "1.0.0",
+  "description": "react-slack-fe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --env development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sicho01/react-slack-fe.git"
+  },
+  "author": "seoik_cho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sicho01/react-slack-fe/issues"
+  },
+  "homepage": "https://github.com/sicho01/react-slack-fe#readme",
+  "dependencies": {
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.10.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@types/webpack-bundle-analyzer": "^4.4.0",
+    "@types/webpack-dev-server": "^3.11.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "fork-ts-checker-webpack-plugin": "^6.2.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.0",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
