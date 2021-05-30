@@ -11,18 +11,19 @@ interface Configuration extends WebpackConfiguration {
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config: Configuration = {
-  name: 'sleact',
+  name: 'React-Slack',
   mode: isDevelopment ? 'development' : 'production',
   devtool: !isDevelopment ? 'hidden-source-map' : 'inline-source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      '@hooks': path.resolve(__dirname, 'hooks'),
-      '@components': path.resolve(__dirname, 'components'),
-      '@layouts': path.resolve(__dirname, 'layouts'),
-      '@pages': path.resolve(__dirname, 'pages'),
-      '@utils': path.resolve(__dirname, 'utils'),
-      '@typings': path.resolve(__dirname, 'typings'),
+      '@hooks': path.resolve(__dirname, 'src/views/hooks'),
+      '@components': path.resolve(__dirname, 'src/views/components'),
+      '@layouts': path.resolve(__dirname, 'src/views/layouts'),
+      '@pages': path.resolve(__dirname, 'src/views/pages'),
+      '@stores': path.resolve(__dirname, 'src/stores'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
+      '@common': path.resolve(__dirname, 'src/common'),
     },
   },
   entry: {
@@ -45,6 +46,11 @@ const config: Configuration = {
             ],
             '@babel/preset-react',
             '@babel/preset-typescript',
+          ],
+          plugins: [
+            ['@babel/plugin-proposal-decorators', { legacy: true }],
+            ['@babel/plugin-proposal-class-properties', { loose: true }],
+            ['@babel/plugin-transform-runtime'],
           ],
           env: {
             development: {

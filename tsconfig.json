@@ -10,13 +10,15 @@
     "strict": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
+    "experimentalDecorators": true,
     "paths": {
-      "@hooks/*": ["hooks/*"],
-      "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"],
-      "@typings/*": ["typings/*"]
+      "@hooks/*": ["src/views/hooks/*"],
+      "@components/*": ["src/views/components/*"],
+      "@layouts/*": ["src/views/layouts/*"],
+      "@pages/*": ["src/views/pages/*"],
+      "@stores/*": ["src/stores/*"],
+      "@utils/*": ["src/utils/*"],
+      "@common/*": ["src/common/*"]
     }
   }
 }
